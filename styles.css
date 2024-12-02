@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #87ceeb;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#game-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#game-area {
+    display: grid;
+    grid-template-columns: repeat(30, 25px); /* 30 blocks wide */
+    grid-template-rows: repeat(20, 25px); /* 20 blocks tall */
+    gap: 1px;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: #000;
+    border: 2px solid #333;
+}
+
+.block {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.dirt { background-color: #8B4513; }
+.grass { background-color: #228B22; }
+.stone { background-color: #808080; }
+.sand { background-color: #FFD700; }
+.water { background-color: #1E90FF; }
+.wood { background-color: #A0522D; }
+.brick { background-color: #B22222; }
+.gold { background-color: #FFD700; }
+.diamond { background-color: #1E90FF; border: 2px solid #ADD8E6; }
+.coal { background-color: #3D3D3D; }
+.lava { background-color: #FF4500; }
+.iron { background-color: #C0C0C0; }
+.obsidian { background-color: #4B0082; }
+.emerald { background-color: #50C878; }
+.copper { background-color: #B87333; }
+.snow { background-color: #FFFFFF; border: 1px solid #DDD; }
+.glass { background-color: rgba(135, 206, 235, 0.5); border: 1px solid #87CEEB; }
+.brick-wall { background-color: #8B0000; }
+.leaves { background-color: #228B22; opacity: 0.7; }
+.sandstone { background-color: #D2B48C; }
+.clay { background-color: #708090; }
+.mossy-stone { background-color: #556B2F; }
+
+#block-picker {
+    margin-top: 20px;
+}
+
+#block-picker button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#block-picker button:hover {
+    background-color: #aaa;
+}
